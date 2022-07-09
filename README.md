@@ -55,6 +55,7 @@ Some of the most useful sensors for making any system autonomous.
 - [ ] Understand Road signs, traffic signs
 - [ ] Locate pedestrians, cars
 - [ ] Forward collision warning (FCW) 
+- [ ] A collision avoidance system (CAS) 
 - [ ] Adaptive cruise control (ACC)
 
 Fully developed technology and large toolbox available; Need to choose right technology according to needs. 

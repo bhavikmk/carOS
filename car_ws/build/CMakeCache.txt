@@ -412,6 +412,9 @@ car_launcher_SOURCE_DIR:STATIC=/home/bhavik/projects/car/autoCar/car_ws/src/car_
 //Value Computed by CMake
 car_msgs_BINARY_DIR:STATIC=/home/bhavik/projects/car/autoCar/car_ws/build/car/car_msgs
 
+//The directory containing a CMake configuration file for car_msgs.
+car_msgs_DIR:PATH=/home/bhavik/projects/car/autoCar/car_ws/devel/share/car_msgs/cmake
+
 //Value Computed by CMake
 car_msgs_SOURCE_DIR:STATIC=/home/bhavik/projects/car/autoCar/car_ws/src/car/car_msgs
 
