@@ -5,11 +5,13 @@
 Self driving technology is well developed field and it is full of all giant minds trying to bring self driving car to roads of nation.
 
 **Levels of autonomy:**
-1. Fully manual
-2. ...
-3. ...
-4. ...
-5. Fully autonomous
+
+> Level 0 - Complete manual mode (no automation)
+> Level 1 - hands on/shared control
+> Level 2 - hands off 
+> Level 3 - eyes off
+> Level 4 - mind off 
+> Level 5 - steering wheel optional
 
 ## Self driving car architecture
 
@@ -46,18 +48,40 @@ Some of the most useful sensors for making any system autonomous.
 
 
 ---------------
+## TODO
 
-### Autonomous car technologies in market
+### Level 0
 
-**ADAS Technology**
+- [ ] Parking sensors 
+- [ ] Surround-view 
+- [ ] Traffic sign recognition 
+- [ ] Lane departure warning 
+- [ ] Night vision
+- [ ] Blind spot information system
+- [ ] Rear-cross traffic alert
+- [ ] Forward-collision warning
 
-- [ ] lane lines detector
-- [ ] Understand Road signs, traffic signs
-- [ ] Locate pedestrians, cars
-- [ ] Forward collision warning (FCW) 
-- [ ] A collision avoidance system (CAS) 
-- [ ] Adaptive cruise control (ACC)
+### Level 1 
 
-Fully developed technology and large toolbox available; Need to choose right technology according to needs. 
+- [ ] Adaptive cruise control 
+- [ ] Emergency brake assist
+- [ ] Automatic emergency brake assist
+- [ ] Lane-keeping
+- [ ] Lane centering
 
+### Level 2  
+- [ ] Highway assist
+- [ ] Autonomous obstacle avoidance
+- [ ] Autonomous parking.
 
+ADAS that are considered From level 3 to 5, the amount of control the vehicle has increases
+
+level 5 being where the vehicle is fully autonomous.
+ 
+---------------
+
+# Notes
+
+Self driving car is widely developed technology and large toolbox and state of the art ideas available, Need to make right decisions according to needs. 
+
+--------------
