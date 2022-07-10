@@ -428,7 +428,7 @@ perception/localizer/clean: perception/localizer/CMakeFiles/localizer_node.dir/c
 # Directory level rules for directory perception/sign_detector_classifier
 
 # Recursive "all" directory target.
-perception/sign_detector_classifier/all:
+perception/sign_detector_classifier/all: perception/sign_detector_classifier/CMakeFiles/sign_detector_classifier_node.dir/all
 
 .PHONY : perception/sign_detector_classifier/all
 
@@ -438,7 +438,7 @@ perception/sign_detector_classifier/preinstall:
 .PHONY : perception/sign_detector_classifier/preinstall
 
 # Recursive "clean" directory target.
-perception/sign_detector_classifier/clean:
+perception/sign_detector_classifier/clean: perception/sign_detector_classifier/CMakeFiles/sign_detector_classifier_node.dir/clean
 
 .PHONY : perception/sign_detector_classifier/clean
 
@@ -3546,6 +3546,33 @@ localizer_node: perception/localizer/CMakeFiles/localizer_node.dir/rule
 perception/localizer/CMakeFiles/localizer_node.dir/clean:
 	$(MAKE) -f perception/localizer/CMakeFiles/localizer_node.dir/build.make perception/localizer/CMakeFiles/localizer_node.dir/clean
 .PHONY : perception/localizer/CMakeFiles/localizer_node.dir/clean
+
+#=============================================================================
+# Target rules for target perception/sign_detector_classifier/CMakeFiles/sign_detector_classifier_node.dir
+
+# All Build rule for target.
+perception/sign_detector_classifier/CMakeFiles/sign_detector_classifier_node.dir/all:
+	$(MAKE) -f perception/sign_detector_classifier/CMakeFiles/sign_detector_classifier_node.dir/build.make perception/sign_detector_classifier/CMakeFiles/sign_detector_classifier_node.dir/depend
+	$(MAKE) -f perception/sign_detector_classifier/CMakeFiles/sign_detector_classifier_node.dir/build.make perception/sign_detector_classifier/CMakeFiles/sign_detector_classifier_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bhavik/projects/car/autoCar/car_ws/build/CMakeFiles --progress-num=44,45 "Built target sign_detector_classifier_node"
+.PHONY : perception/sign_detector_classifier/CMakeFiles/sign_detector_classifier_node.dir/all
+
+# Build rule for subdir invocation for target.
+perception/sign_detector_classifier/CMakeFiles/sign_detector_classifier_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bhavik/projects/car/autoCar/car_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 perception/sign_detector_classifier/CMakeFiles/sign_detector_classifier_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bhavik/projects/car/autoCar/car_ws/build/CMakeFiles 0
+.PHONY : perception/sign_detector_classifier/CMakeFiles/sign_detector_classifier_node.dir/rule
+
+# Convenience name for target.
+sign_detector_classifier_node: perception/sign_detector_classifier/CMakeFiles/sign_detector_classifier_node.dir/rule
+
+.PHONY : sign_detector_classifier_node
+
+# clean rule for target.
+perception/sign_detector_classifier/CMakeFiles/sign_detector_classifier_node.dir/clean:
+	$(MAKE) -f perception/sign_detector_classifier/CMakeFiles/sign_detector_classifier_node.dir/build.make perception/sign_detector_classifier/CMakeFiles/sign_detector_classifier_node.dir/clean
+.PHONY : perception/sign_detector_classifier/CMakeFiles/sign_detector_classifier_node.dir/clean
 
 #=============================================================================
 # Target rules for target perception/3d_object_detector/CMakeFiles/3d_object_detector_node.dir

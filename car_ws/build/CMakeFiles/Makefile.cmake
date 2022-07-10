@@ -476,5 +476,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "perception/free_space_detector/CMakeFiles/std_srvs_generate_messages_py.dir/DependInfo.cmake"
   "perception/lane_detector/CMakeFiles/lane_detector_node.dir/DependInfo.cmake"
   "perception/localizer/CMakeFiles/localizer_node.dir/DependInfo.cmake"
+  "perception/sign_detector_classifier/CMakeFiles/sign_detector_classifier_node.dir/DependInfo.cmake"
   "perception/3d_object_detector/CMakeFiles/3d_object_detector_node.dir/DependInfo.cmake"
   )

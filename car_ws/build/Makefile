@@ -1624,6 +1624,19 @@ localizer_node/fast:
 .PHONY : localizer_node/fast
 
 #=============================================================================
+# Target rules for targets named sign_detector_classifier_node
+
+# Build rule for target.
+sign_detector_classifier_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sign_detector_classifier_node
+.PHONY : sign_detector_classifier_node
+
+# fast build rule for target.
+sign_detector_classifier_node/fast:
+	$(MAKE) -f perception/sign_detector_classifier/CMakeFiles/sign_detector_classifier_node.dir/build.make perception/sign_detector_classifier/CMakeFiles/sign_detector_classifier_node.dir/build
+.PHONY : sign_detector_classifier_node/fast
+
+#=============================================================================
 # Target rules for targets named 3d_object_detector_node
 
 # Build rule for target.
@@ -1761,6 +1774,7 @@ help:
 	@echo "... std_srvs_generate_messages_py"
 	@echo "... lane_detector_node"
 	@echo "... localizer_node"
+	@echo "... sign_detector_classifier_node"
 	@echo "... 3d_object_detector_node"
 .PHONY : help
 

@@ -208,6 +208,7 @@
 /home/bhavik/projects/car/autoCar/car_ws/build/perception/sign_detector_classifier/CMakeFiles/rebuild_cache.dir
 /home/bhavik/projects/car/autoCar/car_ws/build/perception/sign_detector_classifier/CMakeFiles/edit_cache.dir
 /home/bhavik/projects/car/autoCar/car_ws/build/perception/sign_detector_classifier/CMakeFiles/test.dir
+/home/bhavik/projects/car/autoCar/car_ws/build/perception/sign_detector_classifier/CMakeFiles/sign_detector_classifier_node.dir
 /home/bhavik/projects/car/autoCar/car_ws/build/perception/3d_object_detector/CMakeFiles/install/strip.dir
 /home/bhavik/projects/car/autoCar/car_ws/build/perception/3d_object_detector/CMakeFiles/install/local.dir
 /home/bhavik/projects/car/autoCar/car_ws/build/perception/3d_object_detector/CMakeFiles/install.dir
