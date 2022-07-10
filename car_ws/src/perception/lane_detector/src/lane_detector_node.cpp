@@ -42,11 +42,11 @@ public:
             ROS_ERROR("cv_bridge exception: %s", e.what());
             return;
         }
-        detect_edges(cv_ptr->image);
+        detect_lanes(cv_ptr->image);
         // image_pub_.publish(cv_ptr->toImageMsg());
 
     }
-    void detect_edges(cv::Mat img)
+    void detect_lanes(cv::Mat img)
     {
         cv::Mat src, src_gray;
         cv::Mat dst, detected_edges;
@@ -75,51 +75,3 @@ int main(int argc, char **argv)
     ros::spin();
     return 0;
 }
-
-//     ros::NodeHandle nh;
-//     image_transport::ImageTransport it;
-
-//     // Parameters & Attributes
-
-//     LaneDetector : it(nh) {
-
-//         ros::Publisher pub = nh.advertise<car_msgs::Lane>("/lane", 1);
-//         image_transport::ImageTransport image_sub = it.subscribe<sensor_msgs::Image>("/front_image", 1, &LaneDetector::imageCB);
-//     }
-//     ~LaneDetector(){}
-
-//     car_msgs::Lane laneDetection;
-
-//     void imageCB(const sensor_msgs::ImageConstPtr &msg)
-//     {
-//         cv_bridge::CvImagePtr cv_ptr;
-
-//         try
-//         {
-//             cv_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
-
-//             // image is cv_ptr->image;
-
-//             // Find Lanes from Image
-
-//             // Publish Lanes
-//         }
-
-//         catch (cv_bridge::Exception &e)
-//         {
-//             ROS_ERROR("cv_bridge exception: %s", e.what());
-//             return;
-//         }
-//     }
-
-//     // Methods for processing images & detecting lanes
-// };
-
-// int main(int argc, char **argv)
-// {
-//     ros::init(argc, argv, "3d_object_detector");
-
-//     LaneDetector object_detector = LaneDetector();
-//     ros::spin();
-
-// }
