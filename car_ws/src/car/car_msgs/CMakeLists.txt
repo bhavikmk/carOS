@@ -52,11 +52,12 @@ find_package(catkin REQUIRED COMPONENTS
 
 ## Generate messages in the 'msg' folder
 add_message_files(
-   FILES
-   ObjectDetect.msg
-   
-#   Message1.msg
-#   Message2.msg
+  FILES
+  LidarObjectDetect.msg
+  FreeSpace.msg
+  Lane.msg
+  TrafficSign.msg
+  Trajectory.msg
 )
 
 ## Generate services in the 'srv' folder

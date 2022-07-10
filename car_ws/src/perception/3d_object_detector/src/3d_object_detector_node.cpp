@@ -2,10 +2,9 @@
 #include <ros/ros.h>
 #include <pcl_ros/point_cloud.h>
 #include "pcl-1.10/pcl/point_types.h"
-#include <boost/foreach.hpp>
 
 // Msg types
-#include "car_msgs/ObjectDetect.h"
+#include "car_msgs/LidarObjectDetect.h"
 
 using namespace std;
 
@@ -20,7 +19,7 @@ class LidarObjectDetector {
 
     // Parameters & Attributes
     PointCloud cloud;
-    car_msgs::ObjectDetect detections;
+    car_msgs::LidarObjectDetect detections;
     
     void cloudCB(const PointCloud::ConstPtr &msg)
     {
@@ -30,7 +29,7 @@ class LidarObjectDetector {
     LidarObjectDetector (ros::NodeHandle &nh){
 
         sub = nh.subscribe<PointCloud>("/pointcloud", 1, &LidarObjectDetector::cloudCB, this);
-        pub = nh.advertise<car_msgs::ObjectDetect> ("/obstacles", 1);
+        pub = nh.advertise<car_msgs::LidarObjectDetect> ("/obstacles", 1);
     }
 
     // Methods for processing point clouds & detecting obstacles (vehicles, pedestrians)
