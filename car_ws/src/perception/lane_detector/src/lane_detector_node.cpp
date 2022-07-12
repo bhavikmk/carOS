@@ -65,6 +65,12 @@ public:
         dst = cv::Scalar::all(0);
         img.copyTo(dst, detected_edges);
         dst.copyTo(img);
+
+        // Find lanes
+
+        // Publish
+
+        pub.publish(lanes);
     }
 };
 
