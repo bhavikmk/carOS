@@ -1,2 +1,2 @@
-car/car:car/car_msgs:car_launcher:control/mpc_controller:control/pid_controller:perception/3d_object_detector:perception/free_space_detector:perception/lane_detector:perception/localizer:perception/sign_detector_classifier:planning/route_planner:planning/trajectory_planner
+car/car:car/car_msgs:car_launcher:control/mpc_controller:control/pid_controller:perception/2d_object_tracker:perception/3d_object_detector:perception/free_space_detector:perception/lane_detector:perception/localizer:perception/sign_detector_classifier:planning/route_planner:planning/trajectory_planner
 -DCATKIN_DEVEL_PREFIX=/home/bhavik/projects/car/autoCar/car_ws/devel -DCMAKE_INSTALL_PREFIX=/home/bhavik/projects/car/autoCar/car_ws/install -G Unix Makefiles
