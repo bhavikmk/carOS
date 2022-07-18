@@ -478,4 +478,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "perception/localizer/CMakeFiles/localizer_node.dir/DependInfo.cmake"
   "perception/sign_detector_classifier/CMakeFiles/sign_detector_classifier_node.dir/DependInfo.cmake"
   "perception/3d_object_detector/CMakeFiles/3d_object_detector_node.dir/DependInfo.cmake"
+  "planning/trajectory_planner/CMakeFiles/trajectory_planner_node.dir/DependInfo.cmake"
   )

@@ -1649,6 +1649,19 @@ sign_detector_classifier_node/fast:
 	$(MAKE) -f perception/3d_object_detector/CMakeFiles/3d_object_detector_node.dir/build.make perception/3d_object_detector/CMakeFiles/3d_object_detector_node.dir/build
 .PHONY : 3d_object_detector_node/fast
 
+#=============================================================================
+# Target rules for targets named trajectory_planner_node
+
+# Build rule for target.
+trajectory_planner_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trajectory_planner_node
+.PHONY : trajectory_planner_node
+
+# fast build rule for target.
+trajectory_planner_node/fast:
+	$(MAKE) -f planning/trajectory_planner/CMakeFiles/trajectory_planner_node.dir/build.make planning/trajectory_planner/CMakeFiles/trajectory_planner_node.dir/build
+.PHONY : trajectory_planner_node/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1776,6 +1789,7 @@ help:
 	@echo "... localizer_node"
 	@echo "... sign_detector_classifier_node"
 	@echo "... 3d_object_detector_node"
+	@echo "... trajectory_planner_node"
 .PHONY : help
 
 
