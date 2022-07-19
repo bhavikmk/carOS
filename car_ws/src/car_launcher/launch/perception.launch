@@ -1,0 +1,10 @@
+<launch>
+<node name="obstacle_detector_2d" pkg="obstacle_detector_2d" type="obstacle_detector_2d" output="screen" />
+<node name="obstacle_tracker_2d" pkg="2d_object_tracker" type="obstacle_tracker_2d" output="screen" />
+<node name="obstacle_detector_3d" pkg="3d_object_detector" type="obstacle_detector_3d" output="screen" />
+<node name="free_space_detector_node" pkg="free_space_detector" type="free_space_detector_node" output="screen" />
+<node name="lane_detector_node" pkg="lane_detector" type="lane_detector_node" output="screen" />
+<node name="localizer_node" pkg="localizer" type="localizer_node" output="screen" />
+<node name="sign_detector_classifier_node" pkg="sign_detector_classifier" type="sign_detector_classifier_node" output="screen" />
+
+</launch>

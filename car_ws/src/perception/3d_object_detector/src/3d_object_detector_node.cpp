@@ -29,7 +29,7 @@ class LidarObjectDetector {
     LidarObjectDetector (ros::NodeHandle &nh){
 
         sub = nh.subscribe<PointCloud>("/pointcloud", 1, &LidarObjectDetector::cloudCB, this);
-        pub = nh.advertise<car_msgs::LidarObjectDetect> ("/obstacles", 1);
+        pub = nh.advertise<car_msgs::LidarObjectDetect> ("/3d_objects_detected", 1);
     }
 
     // Methods for processing point clouds & detecting obstacles (vehicles, pedestrians)

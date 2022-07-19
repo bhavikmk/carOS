@@ -33,8 +33,8 @@ class ObjectTracker
 
         ObjectTracker(ros::NodeHandle nh){
 
-            pub = nh.advertise<car_msgs::Detections>("/objects_tracked", 1);
-            sub = nh.subscribe<car_msgs::Detections>("/objects_detected", 1, &ObjectTracker::detectionsCallback, this);
+            pub = nh.advertise<car_msgs::Detections>("/2d_objects_tracked", 1);
+            sub = nh.subscribe<car_msgs::Detections>("/2d_objects_detected", 1, &ObjectTracker::detectionsCallback, this);
         }
         void detectionsCallback(const car_msgs::Detections::ConstPtr &msg){
 

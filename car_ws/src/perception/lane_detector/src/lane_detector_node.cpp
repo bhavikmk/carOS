@@ -22,8 +22,8 @@ class LaneDetector
 public:
     LaneDetector() : it(nh)
     {
-        image_sub_ = it.subscribe("/usb_cam/image_raw", 1, &LaneDetector::imageCb, this);
-        ros::Publisher pub = nh.advertise<car_msgs::Lane>("/lane", 1);
+        image_sub_ = it.subscribe("/front_cam/image_raw", 1, &LaneDetector::imageCb, this);
+        ros::Publisher pub = nh.advertise<car_msgs::Lane>("/lanes", 1);
     }
 
     ~LaneDetector(){}

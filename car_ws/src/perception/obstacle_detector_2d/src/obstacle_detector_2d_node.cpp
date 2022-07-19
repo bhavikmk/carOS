@@ -10,23 +10,23 @@
 #include <opencv4/opencv2/highgui/highgui.hpp>
 
 // Msg types
-#include "car_msgs/TrafficSign.h"
+#include "car_msgs/Detections.h"
 
-class SignDetectClassifier
+class ObstacleDetector2D
 {
     ros::NodeHandle nh;
-    car_msgs::TrafficSign trafficSign;
+    car_msgs::Detections detections;
     image_transport::ImageTransport it;
     image_transport::Subscriber image_sub_;
 
 public:
-    SignDetectClassifier() : it(nh)
+    ObstacleDetector2D() : it(nh)
     {
-        image_sub_ = it.subscribe("/front_cam/image_raw", 1, &SignDetectClassifier::imageCb, this);
-        ros::Publisher pub = nh.advertise<car_msgs::TrafficSign>("/trafficSigns", 1);
+        image_sub_ = it.subscribe("/front_cam/image_raw", 1, &ObstacleDetector2D::imageCb, this);
+        ros::Publisher pub = nh.advertise<car_msgs::Detections>("/2d_objects_detected", 1);
     }
 
-    ~SignDetectClassifier(){}
+    ~ObstacleDetector2D(){}
 
     void imageCb(const sensor_msgs::ImageConstPtr &msg)
     {
@@ -67,14 +67,14 @@ public:
 
         // Find 
 
-        // pub.publish(trafficSign);
+        // pub.publish(Detections);
     }
 };
 
 int main(int argc, char **argv)
 {
-    ros::init(argc, argv, "lane_detector");
-    SignDetectClassifier ic;
+    ros::init(argc, argv, "obstacle_detector_2d");
+    ObstacleDetector2D ic;
     ros::spin();
     return 0;
 }
