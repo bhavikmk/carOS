@@ -1,29 +1,5 @@
-// import ros and sensor msgs Image lib
-#include <ros/ros.h>
-#include <sensor_msgs/Image.h>
-#include "car_msgs/Detection.h"
-#include "car_msgs/Detections.h"
+#include "object_tracker.h"
 
-
-// import cv lib
-#include <opencv2/core/core.hpp>
-#include <opencv2/highgui/highgui.hpp>
-#include <opencv2/imgproc/imgproc.hpp>
-
-// import c++ lib
-#include <iostream>
-#include <string>
-#include <vector>
-#include <math.h>
-
-// import cv_bridge lib
-#include <cv_bridge/cv_bridge.h>
-#include <sensor_msgs/image_encodings.h>
-
-// import image_transport 
-#include <image_transport/image_transport.h>
-
-// create class for 2d object tracker 
 class ObjectTracker
 {
     public:
