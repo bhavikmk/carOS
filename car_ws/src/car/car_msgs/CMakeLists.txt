@@ -60,6 +60,8 @@ add_message_files(
   Trajectory.msg
   Detection.msg
   Detections.msg
+  MotorCommand.msg
+  MotorCommands.msg
 )
 
 ## Generate services in the 'srv' folder
