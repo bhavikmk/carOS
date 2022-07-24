@@ -11,3 +11,4 @@
 
 // Msg types
 #include "car_msgs/Detections.h"
+#include "car_msgs/Detection.h"
