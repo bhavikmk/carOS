@@ -4,24 +4,26 @@
 
 Self driving technology is well developed field and it is full of all giant minds trying to bring self driving car to roads of nation.
 
-**Levels of autonomy:**
+> **Levels of autonomy:**
 
-> Level 0 - Complete manual mode (no automation)
-> Level 1 - hands on/shared control
-> Level 2 - hands off 
-> Level 3 - eyes off
-> Level 4 - mind off 
-> Level 5 - steering wheel optional
+> * Level 0 - Complete manual mode (no automation)
+> * Level 1 - hands on/shared control
+> * Level 2 - hands off 
+> * Level 3 - eyes off
+> * Level 4 - mind off 
+> * Level 5 - steering wheel optional
+
+
+ADAS that are considered From level 3 to 5, the amount of control the vehicle has increases.
+
+level 5 being where the vehicle is fully autonomous.
 
 ## Self driving car architecture
 
 ![](https://github.com/bhavikmk/self-driving-car-ros/blob/main/assets/ros-architecture-car.png)
 
-## Perception
 
-Some of the most useful sensors for making any system autonomous.
-
-* **Sensors**
+## **Sensors**
   - Camera, Lidar, Radar, Sonar, IMU, GPS, Odometry
 
 > **Sensor Selection Criteria**
@@ -34,43 +36,63 @@ Some of the most useful sensors for making any system autonomous.
 >   * Size
 >   * Computational requirements
 
+## Perception
+
+**2d object detector**:
+I/P: Image
+O/P: Detections msg
+
+**3d object detector**:
+I/P: LaserScan
+O/P: 3D_Detections msg
+
+**free space detector**:
+I/P: LaserScan
+O/P: FreeSpace msg
+
+**lane detector**:
+I/P: Image
+O/P: Lane msg
+
+**sign detector and classifier**:
+I/P: Image
+O/P: Sign msg
+
+## Localization & Mapping
+
+**Implementation**
+> * Extended kalman filter
+> * Uncented kalman filter
+> * Monte carlo localization
+> * Occupancy grid mapping
+> * GraphSLAM & FastSLAM 
 
 ## Planning
 
+**Route planning**: 
+I/P: Road Network Data, User destination, Online traffic information; 
+O/P: Waypoints
+
+**Behaviour planning**:
+I/P: Waypoints from *route_planning_node*, Road topology, Static and dynamic objects from *object_tracker_node*, traffic sign from *traffic_sign_detector_node*, Traffic rules
+O/P: Strategy
+
+**Motion planning**:
+I/P: Strategy from *behaviour_planning_node*, Estimated pose from *localizer_node*, collision free space from *free_space_detector_node*
+O/P: Trajectory
+
+> * Deep reinforcement learning based path planning
 
 ## Control
 
+**Local Feedback Control**:
+I/P: Trajectory from *motion_planning_node*
+O/P: Steering angle, throttle and brake commands
 
+**PID controller**:
+I/P: Commands from local feedback controller, Sensor data 
+O/P: Actuator control commands
 ---------------
-## TODO
-
-### Level 0
-
-- [ ] Parking sensors 
-- [ ] Surround-view 
-- [ ] Traffic sign recognition 
-- [ ] Lane departure warning 
-- [ ] Night vision
-- [ ] Blind spot information system
-- [ ] Rear-cross traffic alert
-- [ ] Forward-collision warning
-
-### Level 1 
-
-- [ ] Adaptive cruise control 
-- [ ] Emergency brake assist
-- [ ] Automatic emergency brake assist
-- [ ] Lane-keeping
-- [ ] Lane centering
-
-### Level 2  
-- [ ] Highway assist
-- [ ] Autonomous obstacle avoidance
-- [ ] Autonomous parking.
-
-ADAS that are considered From level 3 to 5, the amount of control the vehicle has increases
-
-level 5 being where the vehicle is fully autonomous.
 
 ### Visual and environmental monitoring
 
@@ -94,5 +116,24 @@ level 5 being where the vehicle is fully autonomous.
 # Notes
 
 Self driving car is widely developed technology and large toolbox and state of the art ideas available, Need to make right decisions according to needs. 
+
+Below are some of the features of car with ADAS. I will try to also implement this in the project.
+
+- [ ] Parking sensors 
+- [ ] Surround-view 
+- [ ] Traffic sign recognition 
+- [ ] Lane departure warning 
+- [ ] Night vision
+- [ ] Blind spot information system
+- [ ] Rear-cross traffic alert
+- [ ] Forward-collision warning
+- [ ] Adaptive cruise control 
+- [ ] Emergency brake assist
+- [ ] Automatic emergency brake assist
+- [ ] Lane-keeping
+- [ ] Lane centering
+- [ ] Highway assist
+- [ ] Autonomous obstacle avoidance
+- [ ] Autonomous parking.
 
 --------------

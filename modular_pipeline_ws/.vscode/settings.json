@@ -1,0 +1,8 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/bhavik/projects/car/autoCar/modular_pipeline_ws/devel/lib/python3/dist-packages",
+        "/home/bhavik/amr_ws/devel/lib/python3/dist-packages",
+        "/home/bhavik/catkin_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}
