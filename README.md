@@ -39,24 +39,24 @@ level 5 being where the vehicle is fully autonomous.
 ## Perception
 
 **2d object detector**:
-I/P: Image
-O/P: Detections msg
+> * I/P: Image
+> * O/P: Detections msg
 
 **3d object detector**:
-I/P: LaserScan
-O/P: 3D_Detections msg
+> * I/P: LaserScan
+> * O/P: 3D_Detections msg
 
 **free space detector**:
-I/P: LaserScan
-O/P: FreeSpace msg
+> * I/P: LaserScan
+> * O/P: FreeSpace msg
 
 **lane detector**:
-I/P: Image
-O/P: Lane msg
+> * I/P: Image
+> * O/P: Lane msg
 
 **sign detector and classifier**:
-I/P: Image
-O/P: Sign msg
+> * I/P: Image
+> * O/P: Sign msg
 
 ## Localization & Mapping
 
@@ -70,28 +70,28 @@ O/P: Sign msg
 ## Planning
 
 **Route planning**: 
-I/P: Road Network Data, User destination, Online traffic information; 
-O/P: Waypoints
+> * I/P: Road Network Data, User destination, Online traffic information; 
+> * O/P: Waypoints
 
 **Behaviour planning**:
-I/P: Waypoints from *route_planning_node*, Road topology, Static and dynamic objects from *object_tracker_node*, traffic sign from *traffic_sign_detector_node*, Traffic rules
-O/P: Strategy
+> * I/P: Waypoints from *route_planning_node*, Road topology, Static and dynamic objects from *object_tracker_node*, traffic sign from *traffic_sign_detector_node*, Traffic rules
+> * O/P: Strategy
 
 **Motion planning**:
-I/P: Strategy from *behaviour_planning_node*, Estimated pose from *localizer_node*, collision free space from *free_space_detector_node*
-O/P: Trajectory
+> * I/P: Strategy from *behaviour_planning_node*, Estimated pose from *localizer_node*, collision free space from *free_space_detector_node*
+> * O/P: Trajectory
 
 > * Deep reinforcement learning based path planning
 
 ## Control
 
 **Local Feedback Control**:
-I/P: Trajectory from *motion_planning_node*
-O/P: Steering angle, throttle and brake commands
+> * I/P: Trajectory from *motion_planning_node*
+> * O/P: Steering angle, throttle and brake commands
 
 **PID controller**:
-I/P: Commands from local feedback controller, Sensor data 
-O/P: Actuator control commands
+> * I/P: Commands from local feedback controller, Sensor data 
+> * O/P: Actuator control commands
 ---------------
 
 ### Visual and environmental monitoring
