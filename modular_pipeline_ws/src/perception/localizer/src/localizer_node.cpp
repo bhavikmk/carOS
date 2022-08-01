@@ -15,7 +15,7 @@ class Localizer {
     // Parameters & Attributes
     PointCloud cloud;
     sensor_msgs::NavSatFix gps;
-    car_msgs::LidarObjectDetect globalPose;
+    car_msgs::Detection3D globalPose;
     
     void cloudCB(const PointCloud::ConstPtr &msg)
     {
@@ -30,7 +30,7 @@ class Localizer {
 
         cloudSub = nh.subscribe<PointCloud>("/pointcloud", 1, &Localizer::cloudCB, this);
         gpsSub = nh.subscribe<sensor_msgs::NavSatFix>("/gps", 1, &Localizer::gpsCB, this);
-        pub = nh.advertise<car_msgs::LidarObjectDetect> ("/globalPose", 1);
+        pub = nh.advertise<car_msgs::Detection3D> ("/globalPose", 1);
     }
 
     // Methods for processing point clouds & gps and estimation of global pose

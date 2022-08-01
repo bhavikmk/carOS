@@ -53,7 +53,8 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate messages in the 'msg' folder
 add_message_files(
   FILES
-  LidarObjectDetect.msg
+  Detection3D.msg
+  Detections3D.msg
   FreeSpace.msg
   Lane.msg
   TrafficSign.msg
