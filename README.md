@@ -1,8 +1,8 @@
-# self-driving-car-ros
+# Autonomous car using ROS
 
 ## Description
 
-Self driving technology is well developed field and it is full of all giant minds trying to bring self driving car to roads of nation.
+My customised implementation of autonomous car using Robot Operating System (ROS)
 
 > **Levels of autonomy:**
 
