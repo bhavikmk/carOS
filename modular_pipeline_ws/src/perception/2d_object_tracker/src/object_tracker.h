@@ -15,3 +15,6 @@
 #include <cv_bridge/cv_bridge.h>
 #include <sensor_msgs/image_encodings.h>
 #include <image_transport/image_transport.h>
+#include <opencv2/tracking.hpp>
+#include <opencv2/tracking/tracker.hpp>
+// #include <opencv2/tracking/tracker_kcf.hpp>

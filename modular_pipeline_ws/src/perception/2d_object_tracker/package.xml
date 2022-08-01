@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>2d_object_tracker</name>
+  <name>object_tracker_2d</name>
   <version>0.0.0</version>
   <description>The 2d_object_tracker package</description>
 

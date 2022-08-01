@@ -1,6 +1,10 @@
 Header Header
+int8 id
+float32 x
+float32 y
+float32 height
+float32 width
 
-float32[] bbox
 int64 class_id
 float32 confidence
 

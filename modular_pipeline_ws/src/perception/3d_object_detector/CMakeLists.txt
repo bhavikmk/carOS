@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(3d_object_detector)
+project(object_detector_3d)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)

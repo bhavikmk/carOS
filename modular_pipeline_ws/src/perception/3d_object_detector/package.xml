@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>3d_object_detector</name>
+  <name>object_detector_3d</name>
   <version>0.0.0</version>
   <description>The 3d_object_detector package</description>
 

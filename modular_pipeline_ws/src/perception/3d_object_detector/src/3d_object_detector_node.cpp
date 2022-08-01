@@ -30,7 +30,7 @@ class LidarObjectDetector {
 
 int main(int argc, char **argv)
 {
-    ros::init(argc, argv, "3d_object_detector");
+    ros::init(argc, argv, "object_detector_3d");
     ros::NodeHandle nh;
     LidarObjectDetector object_detector = LidarObjectDetector(nh);
     ros::spin();
