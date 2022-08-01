@@ -39,7 +39,7 @@ public:
         detectClassify(cv_ptr->image);
         
     }
-    // create opencv dnn function to load neural network
+
     void detectClassify(cv::Mat frame)
     {
         cv::Mat frame_gray;
