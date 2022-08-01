@@ -25,9 +25,6 @@ class ObjectTracker
             std::vector<int> ids;
             std::vector<cv::Ptr<cv::Tracker>> trackers;
             std::vector<cv::Mat> images;
-            std::vector<cv::Mat> masks;
-            std::vector<cv::Mat> features;
-            std::vector<cv::Mat> descriptors;
             
             for(int i = 0; i < num_objects; i++){
                 cv::Rect2d rect = cv::Rect2d(detections.detections[i].x, detections.detections[i].y, detections.detections[i].width, detections.detections[i].height);
@@ -35,9 +32,6 @@ class ObjectTracker
                 ids.push_back(detections.detections[i].id);
                 trackers.push_back(tracker);
                 images.push_back(cv::Mat());
-                masks.push_back(cv::Mat());
-                features.push_back(cv::Mat());
-                descriptors.push_back(cv::Mat());
             }
 
             car_msgs::Detections objects_tracked;
