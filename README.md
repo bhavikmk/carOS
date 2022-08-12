@@ -1,5 +1,15 @@
 # Autonomous car using ROS
 
+
+![GitHub Repo stars](https://img.shields.io/github/stars/bhavikmk/self-driving-car-ros?color=FFE333)
+![GitHub Repo forks](https://img.shields.io/github/forks/bhavikmk/self-driving-car-ros?color=FFE333)
+
+![Ubuntu 20.04](https://img.shields.io/badge/OS-Ubuntu-informational?style=flat&logo=ubuntu&logoColor=white&color=2bbc8a)
+![ROS](https://img.shields.io/badge/Tools-ROS-informational?style=flat&logo=ROS&logoColor=white&color=2bbc8a)
+![C++](https://img.shields.io/badge/Code-C++-informational?style=flat&logo=c%2B%2B&logoColor=white&color=2bbc8a)
+![Python](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=c%2B%2B&logoColor=white&color=2bbc8a)
+
+
 ## Description
 
 My customised implementation of autonomous car using Robot Operating System (ROS)
