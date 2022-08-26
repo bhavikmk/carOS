@@ -12,7 +12,7 @@
 
 ## Description
 
-My customised implementation of autonomous car using Robot Operating System (ROS)
+My customised implementation of autonomous car using Robot Operating System (ROS). Also applicable for autonomous trucking system. 
 
 > **Levels of autonomy:**
 
